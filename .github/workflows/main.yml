@@ -44,5 +44,5 @@ jobs:
           username: ${{ secrets.QUAY_GH_USER }}
           password: ${{ secrets.QUAY_GH_TOKEN }}
 
-    - name: Print image url
-      run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
+      - name: Print image url
+        run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
