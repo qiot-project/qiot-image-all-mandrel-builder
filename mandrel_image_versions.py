@@ -3,7 +3,7 @@ import re
 def main():
     mav_re = re.compile('MAVEN_VERSION=([\d\.]*)')
     jav_re = re.compile('JAVA_PACKAGE=.*?([\d]+)')
-    man_re = re.compile('MANDREL_VERSION=.*?([\d\.]+)')
+    man_re = re.compile('MANDREL_VERSION=.*?(\d+\.\d+)')
 
     mav_vers = ""
     jav_vers = ""
